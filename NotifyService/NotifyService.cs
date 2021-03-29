@@ -28,8 +28,7 @@ namespace NotifyService
         
         public void NotifyEvent(object sender, ElapsedEventArgs e)
         {
-            Console.WriteLine("The Elapsed event was raised at {0}", e.SignalTime);
-            Console.WriteLine("Example Notification..." + "Counted interval = " + (IntervalCounter.CountInterval(hours) / 3600000));
+            Console.WriteLine("Example Notification...");
             logger.Info("Successfully notified");
             _timer.Interval = IntervalCounter.CountInterval(hours);
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NotifyService
 {
-    public class IntervalCounter
+    public abstract class IntervalCounter
     {
 
         public static double CountInterval(List<string> hours)
